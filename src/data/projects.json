@@ -1,0 +1,37 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Project Title 1",
+      "description": "A brief description of what this project does and its main purpose.",
+      "longDescription": "A more detailed explanation of the project, including its features, architecture, and any interesting implementation details. This will be shown when the card is expanded.",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "github": "https://github.com/ArjunKrishnatry/project-1",
+      "demo": null,
+      "image": "/images/projects/project-1.png",
+      "challenges": "Key challenges faced during development and how they were solved."
+    },
+    {
+      "id": "project-2",
+      "title": "Project Title 2",
+      "description": "Another project description highlighting the main functionality.",
+      "longDescription": "Expanded details about this project, what problems it solves, and how it was built.",
+      "technologies": ["Python", "Flask", "PostgreSQL"],
+      "github": "https://github.com/ArjunKrishnatry/project-2",
+      "demo": "https://demo.example.com",
+      "image": "/images/projects/project-2.png",
+      "challenges": "Technical challenges and learning experiences from this project."
+    },
+    {
+      "id": "project-3",
+      "title": "Project Title 3",
+      "description": "Description of a third project showcasing different skills.",
+      "longDescription": "Full details about this project's implementation and features.",
+      "technologies": ["C++", "OpenGL"],
+      "github": "https://github.com/ArjunKrishnatry/project-3",
+      "demo": null,
+      "image": "/images/projects/project-3.png",
+      "challenges": "Performance optimizations and algorithmic challenges."
+    }
+  ]
+}

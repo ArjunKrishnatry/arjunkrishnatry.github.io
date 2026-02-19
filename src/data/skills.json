@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "name": "Languages",
+      "skills": [
+        { "name": "C++", "icon": "cplusplus" },
+        { "name": "Python", "icon": "python" },
+        { "name": "JavaScript", "icon": "javascript" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Java", "icon": "java" },
+        { "name": "HTML", "icon": "html5" },
+        { "name": "CSS", "icon": "css3" }
+      ]
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "skills": [
+        { "name": "React", "icon": "react" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "Tailwind CSS", "icon": "tailwindcss" },
+        { "name": "Flask", "icon": "flask" }
+      ]
+    },
+    {
+      "name": "Tools & Platforms",
+      "skills": [
+        { "name": "Git", "icon": "git" },
+        { "name": "GitHub", "icon": "github" },
+        { "name": "VS Code", "icon": "vscode" },
+        { "name": "Linux", "icon": "linux" },
+        { "name": "Docker", "icon": "docker" }
+      ]
+    },
+    {
+      "name": "Databases",
+      "skills": [
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "MySQL", "icon": "mysql" }
+      ]
+    }
+  ]
+}

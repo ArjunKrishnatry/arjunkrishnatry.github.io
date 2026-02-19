@@ -1,68 +1,152 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Custom base styles */
+@layer base {
+  /* Smooth scrolling - respects reduced motion preference */
+  html {
+    scroll-behavior: smooth;
   }
-  a:hover {
-    color: #747bff;
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
-  button {
-    background-color: #f9f9f9;
+
+  /* Default body styling */
+  body {
+    @apply bg-background text-gray-50 font-sans;
+    min-height: 100vh;
+  }
+
+  /* Light mode body styling */
+  body.light {
+    @apply bg-background-light text-gray-900;
+  }
+
+  /* Light mode overrides for elements */
+  .light .bg-surface {
+    @apply bg-surface-light;
+  }
+
+  .light .border-border {
+    @apply border-border-light;
+  }
+
+  .light .text-gray-400 {
+    @apply text-gray-500;
+  }
+
+  .light .text-primary {
+    @apply text-primary-dark;
+  }
+
+  /* Focus visible styling for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+
+  /* Selection styling */
+  ::selection {
+    @apply bg-primary/30 text-white;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  /* Skip to content link for accessibility */
+  .skip-link {
+    @apply absolute -top-10 left-4 z-50 bg-primary text-white px-4 py-2 rounded-md transition-all duration-200;
+  }
+
+  .skip-link:focus {
+    @apply top-4;
+  }
+
+  /* Terminal styling */
+  .terminal {
+    @apply bg-surface rounded-lg border border-border font-mono text-sm;
+  }
+
+  .terminal-header {
+    @apply flex items-center gap-2 px-4 py-3 border-b border-border;
+  }
+
+  .terminal-dot {
+    @apply w-3 h-3 rounded-full;
+  }
+
+  .terminal-body {
+    @apply p-4 overflow-hidden;
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply transform -translate-y-1 shadow-glow;
+  }
+
+  /* Glow effect for buttons */
+  .btn-glow {
+    @apply relative overflow-hidden;
+  }
+
+  .btn-glow::after {
+    content: '';
+    @apply absolute inset-0 bg-primary/20 opacity-0 transition-opacity duration-300;
+  }
+
+  .btn-glow:hover::after {
+    @apply opacity-100;
+  }
+
+  /* Section styling */
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
+  }
+
+  /* Animated underline */
+  .animated-underline {
+    @apply relative;
+  }
+
+  .animated-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+
+  .animated-underline:hover::after {
+    @apply w-full;
   }
 }

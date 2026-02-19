@@ -1,0 +1,24 @@
+{
+  "commands": [
+    {
+      "command": "whoami",
+      "output": "Arjun Krishnatry",
+      "delay": 80
+    },
+    {
+      "command": "cat role.txt",
+      "output": "Computer Science Student & Developer",
+      "delay": 80
+    },
+    {
+      "command": "ls skills/",
+      "output": "C++  Python  React  JavaScript  Git",
+      "delay": 80
+    },
+    {
+      "command": "echo $CONTACT",
+      "output": "arjun.krishnatry@gmail.com",
+      "delay": 80
+    }
+  ]
+}
