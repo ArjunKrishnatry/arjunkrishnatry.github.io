@@ -7,17 +7,17 @@
     },
     {
       "command": "cat role.txt",
-      "output": "Computer Science Student & Developer",
+      "output": "CS Student @ Western University | ML Enthusiast",
       "delay": 80
     },
     {
       "command": "ls skills/",
-      "output": "C++  Python  React  JavaScript  Git",
+      "output": "Python  PyTorch  React  C++  TensorFlow",
       "delay": 80
     },
     {
-      "command": "echo $CONTACT",
-      "output": "arjun.krishnatry@gmail.com",
+      "command": "echo $FOCUS",
+      "output": "Machine Learning & Full-Stack Development",
       "delay": 80
     }
   ]

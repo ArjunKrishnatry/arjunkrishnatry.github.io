@@ -1,37 +1,44 @@
 {
   "projects": [
     {
-      "id": "project-1",
-      "title": "Project Title 1",
-      "description": "A brief description of what this project does and its main purpose.",
-      "longDescription": "A more detailed explanation of the project, including its features, architecture, and any interesting implementation details. This will be shown when the card is expanded.",
-      "technologies": ["React", "Node.js", "MongoDB"],
-      "github": "https://github.com/ArjunKrishnatry/project-1",
+      "id": "codebuster",
+      "title": "CodeBuster",
+      "description": "An AI-powered code plagiarism detector that identifies similarities beyond simple token matching, providing a more effective alternative to traditional detection software.",
+      "longDescription": "Developer on a 6-person team building CodeBuster, an advanced AI code plagiarism detector. The system uses TF-IDF features, GraphCodeBERT-based embeddings, and output-based similarity analysis to capture syntactic, semantic, and behavioral signals in code submissions.",
+      "technologies": ["Python", "PyTorch", "scikit-learn", "Streamlit"],
+      "github": "https://github.com/ArjunKrishnatry",
       "demo": null,
-      "image": "/images/projects/project-1.png",
-      "challenges": "Key challenges faced during development and how they were solved."
+      "challenges": "Trained an MLP to fuse token, semantic, and output scores into an overall plagiarism-risk prediction. Achieved 50% higher detection rate for plagiarized code and 37% decrease in mean absolute error through hyperparameter tuning. Project to be presented at the Canadian Undergraduate Conference on AI 2025."
     },
     {
-      "id": "project-2",
-      "title": "Project Title 2",
-      "description": "Another project description highlighting the main functionality.",
-      "longDescription": "Expanded details about this project, what problems it solves, and how it was built.",
-      "technologies": ["Python", "Flask", "PostgreSQL"],
-      "github": "https://github.com/ArjunKrishnatry/project-2",
-      "demo": "https://demo.example.com",
-      "image": "/images/projects/project-2.png",
-      "challenges": "Technical challenges and learning experiences from this project."
+      "id": "easyaccounting",
+      "title": "EasyAccounting",
+      "description": "A cross-platform desktop application for personal financial tracking with custom expense categorization and visual dashboards.",
+      "longDescription": "Built a full-stack desktop application using React for the frontend and FastAPI for the backend, packaged via Electron for cross-platform compatibility. Features include user authentication, local encryption, custom expense categories, and summary dashboards.",
+      "technologies": ["React", "Electron", "FastAPI", "Python"],
+      "github": "https://github.com/ArjunKrishnatry",
+      "demo": null,
+      "challenges": "Implemented secure local encryption for sensitive financial data. Currently used monthly by family members with plans for wider release including CI security checks (dependency scanning, static analysis) for stronger cybersecurity."
     },
     {
-      "id": "project-3",
-      "title": "Project Title 3",
-      "description": "Description of a third project showcasing different skills.",
-      "longDescription": "Full details about this project's implementation and features.",
-      "technologies": ["C++", "OpenGL"],
-      "github": "https://github.com/ArjunKrishnatry/project-3",
+      "id": "rust-to-glory",
+      "title": "Rust to Glory",
+      "description": "A Java/Swing educational game developed as a team project, featuring custom UI panels, character animations, and an inventory system.",
+      "longDescription": "Collaborated with a 4-person team to deliver an educational game for CS2212. Designed custom UI panels, character animations, and an item inventory subsystem. The project received a grade of 97%.",
+      "technologies": ["Java", "Swing", "GitLab", "JUnit"],
+      "github": "https://github.com/ArjunKrishnatry",
       "demo": null,
-      "image": "/images/projects/project-3.png",
-      "challenges": "Performance optimizations and algorithmic challenges."
+      "challenges": "Wrote extensive JUnit tests and refactored the MVC structure for maintainability. Used GitLab issues and merge requests for disciplined collaboration, resulting in an efficient goal-oriented team environment."
+    },
+    {
+      "id": "ml-internship",
+      "title": "Container Stacking Optimization",
+      "description": "Deep Q-Network agent for optimizing container stacking at ports, developed during my ML internship at Solverminds Solutions.",
+      "longDescription": "Built a Deep Q-Network (DQN) agent and custom environment for container stacking optimization. Incorporated lashing constraints to improve layout feasibility and reduce costs for shipping clients by automating stacking protocols.",
+      "technologies": ["Python", "TensorFlow", "scikit-learn", "pandas"],
+      "github": null,
+      "demo": null,
+      "challenges": "Researched supervised models (XGBoost, KAN) on hydrostatic datasets, achieving 0.09% Mean Absolute Percentage Error. Designed reward shaping and scenario simulators aligned with international port operations. Also mentored incoming interns, helping them join the team ahead of schedule."
     }
   ]
 }

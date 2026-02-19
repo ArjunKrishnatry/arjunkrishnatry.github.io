@@ -14,14 +14,18 @@ export function About() {
           {/* Introduction */}
           <div>
             <p className="text-gray-300 mb-4 leading-relaxed">
-              I&apos;m a Computer Science student with a passion for building software
-              that makes a difference. I enjoy tackling challenging problems and
-              learning new technologies along the way.
+              I&apos;m a Computer Science student at the University of Western Ontario
+              with a passion for machine learning and full-stack development. I enjoy
+              building intelligent systems and creating software that solves real problems.
+            </p>
+            <p className="text-gray-400 mb-6 leading-relaxed">
+              Recently, I completed a Machine Learning internship where I built Deep Q-Network
+              agents for optimization problems. I&apos;m also working on CodeBuster, an AI-powered
+              plagiarism detector that will be presented at the Canadian Undergraduate Conference on AI.
             </p>
             <p className="text-gray-400 mb-6 leading-relaxed">
               When I&apos;m not coding, you can find me lifting weights at the gym,
-              playing basketball, or gaming with friends. I believe in maintaining
-              a healthy balance between work and personal interests.
+              playing basketball, or gaming with friends.
             </p>
 
             {/* Resume Download */}
@@ -70,8 +74,46 @@ export function About() {
                 </svg>
                 Education
               </h3>
-              <p className="text-gray-300 font-medium">Computer Science</p>
-              <p className="text-gray-400 text-sm">Currently studying</p>
+              <p className="text-gray-300 font-medium">BSc, Honors Specialization in Computer Science</p>
+              <p className="text-gray-400 text-sm">University of Western Ontario • Expected 2027</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded">
+                  Western Scholarship of Distinction
+                </span>
+                <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded">
+                  Dean&apos;s Honor List 2023
+                </span>
+              </div>
+            </div>
+
+            {/* Clubs */}
+            <div className="p-6 bg-background rounded-lg border border-border">
+              <h3 className="text-lg font-semibold text-primary mb-3 flex items-center gap-2">
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                Clubs & Activities
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {['Western AI', 'CS Undergraduate Club', 'Cyber Society'].map((club) => (
+                  <span
+                    key={club}
+                    className="px-3 py-1 bg-surface text-gray-300 text-sm rounded-full border border-border"
+                  >
+                    {club}
+                  </span>
+                ))}
+              </div>
             </div>
 
             {/* Interests */}
@@ -93,7 +135,7 @@ export function About() {
                 Interests
               </h3>
               <div className="flex flex-wrap gap-2">
-                {['Weightlifting', 'Basketball', 'Video Games', 'Music'].map((interest) => (
+                {['Weightlifting', 'Basketball', 'Video Games'].map((interest) => (
                   <span
                     key={interest}
                     className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"

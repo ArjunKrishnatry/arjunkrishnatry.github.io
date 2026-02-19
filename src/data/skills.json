@@ -3,21 +3,27 @@
     {
       "name": "Languages",
       "skills": [
-        { "name": "C++", "icon": "cplusplus" },
         { "name": "Python", "icon": "python" },
+        { "name": "C/C++", "icon": "cplusplus" },
         { "name": "JavaScript", "icon": "javascript" },
         { "name": "TypeScript", "icon": "typescript" },
-        { "name": "Java", "icon": "java" },
+        { "name": "SQL", "icon": "mysql" },
+        { "name": "R", "icon": "r" },
         { "name": "HTML", "icon": "html5" },
         { "name": "CSS", "icon": "css3" }
       ]
     },
     {
-      "name": "Frameworks & Libraries",
+      "name": "Libraries & Frameworks",
       "skills": [
+        { "name": "PyTorch", "icon": "pytorch" },
+        { "name": "TensorFlow", "icon": "tensorflow" },
+        { "name": "scikit-learn", "icon": "scikitlearn" },
+        { "name": "NumPy", "icon": "numpy" },
+        { "name": "pandas", "icon": "pandas" },
+        { "name": "Matplotlib", "icon": "matplotlib" },
         { "name": "React", "icon": "react" },
-        { "name": "Node.js", "icon": "nodejs" },
-        { "name": "Tailwind CSS", "icon": "tailwindcss" },
+        { "name": "Next.js", "icon": "nextjs" },
         { "name": "Flask", "icon": "flask" }
       ]
     },
@@ -26,17 +32,9 @@
       "skills": [
         { "name": "Git", "icon": "git" },
         { "name": "GitHub", "icon": "github" },
-        { "name": "VS Code", "icon": "vscode" },
         { "name": "Linux", "icon": "linux" },
-        { "name": "Docker", "icon": "docker" }
-      ]
-    },
-    {
-      "name": "Databases",
-      "skills": [
-        { "name": "PostgreSQL", "icon": "postgresql" },
-        { "name": "MongoDB", "icon": "mongodb" },
-        { "name": "MySQL", "icon": "mysql" }
+        { "name": "Jupyter", "icon": "jupyter" },
+        { "name": "LaTeX", "icon": "latex" }
       ]
     }
   ]
