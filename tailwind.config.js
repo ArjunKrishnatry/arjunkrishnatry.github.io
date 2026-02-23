@@ -40,8 +40,9 @@ export default {
       },
       // Custom font families
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        sans: ['Outfit', 'system-ui', 'sans-serif'],
+        display: ['Space Grotesk', 'system-ui', 'sans-serif'],
+        mono: ['Fira Code', 'monospace'],
       },
       // Custom animations
       animation: {
