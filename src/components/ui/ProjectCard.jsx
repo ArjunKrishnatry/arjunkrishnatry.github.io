@@ -10,8 +10,10 @@ export function ProjectCard({ project }) {
 
   return (
     <div
-      className={`bg-surface rounded-lg border border-border overflow-hidden transition-all duration-300 ${
-        isExpanded ? 'shadow-glow' : 'hover:border-primary/30'
+      className={`bg-surface/90 backdrop-blur-sm rounded-lg border overflow-hidden transition-all duration-500 project-card ${
+        isExpanded
+          ? 'shadow-glow-xl border-primary/50 card-glow-active'
+          : 'border-border hover:border-primary/40 hover:shadow-glow card-glow'
       }`}
     >
       {/* Card Header - Always visible */}

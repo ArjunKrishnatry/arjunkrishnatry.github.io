@@ -299,3 +299,100 @@
 .light .glow-orb {
   mix-blend-mode: multiply;
 }
+
+/* ================================
+   BUTTON & CARD GLOW EFFECTS
+   Bioluminescent accents for UI elements
+   ================================ */
+
+/* Primary button subtle pulse glow */
+.btn-glow-pulse {
+  animation: btn-glow-breathe 4s ease-in-out infinite;
+}
+
+@keyframes btn-glow-breathe {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(6, 182, 212, 0.5), 0 0 40px rgba(6, 182, 212, 0.2);
+  }
+}
+
+/* Card glow on hover */
+.card-glow {
+  position: relative;
+}
+
+.card-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(6, 182, 212, 0) 40%,
+    rgba(6, 182, 212, 0.3) 50%,
+    rgba(6, 182, 212, 0) 60%,
+    transparent 100%
+  );
+  background-size: 300% 300%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.card-glow:hover::before {
+  opacity: 1;
+  animation: card-shimmer 3s ease-in-out infinite;
+}
+
+@keyframes card-shimmer {
+  0% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+/* Active/expanded card glow */
+.card-glow-active {
+  animation: card-active-glow 3s ease-in-out infinite;
+}
+
+@keyframes card-active-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3), 0 0 40px rgba(6, 182, 212, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.4), 0 0 60px rgba(6, 182, 212, 0.2);
+  }
+}
+
+/* Project card specific styling */
+.project-card {
+  position: relative;
+  z-index: 1;
+}
+
+/* Light mode adjustments for glows */
+.light .btn-glow-pulse {
+  animation: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.light .btn-glow-pulse:hover {
+  box-shadow: 0 4px 16px rgba(6, 182, 212, 0.3);
+}
+
+.light .card-glow-active {
+  animation: none;
+  box-shadow: 0 4px 20px rgba(6, 182, 212, 0.2);
+}

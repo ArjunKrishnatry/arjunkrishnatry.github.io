@@ -1,6 +1,16 @@
 {
   "projects": [
     {
+      "id": "portfolio",
+      "title": "Personal Portfolio",
+      "description": "An immersive developer portfolio featuring bioluminescent visual effects, smooth animations, and a dark oceanic theme.",
+      "longDescription": "Designed and built a modern, responsive portfolio website with a unique underwater-inspired aesthetic. Features include ambient bioluminescent background effects with color-shifting glow orbs and rising particles, expandable project cards, a typing terminal animation, and full dark/light mode support.",
+      "technologies": ["React", "Tailwind CSS", "Vite", "CSS Animations"],
+      "github": "https://github.com/ArjunKrishnatry",
+      "demo": "https://arjunkrishnatry.github.io/Portfolio",
+      "challenges": "Created custom SVG-based particle systems and CSS animations for the bioluminescent effects while maintaining smooth 60fps performance. Implemented backdrop blur and mix-blend-modes to ensure particles remain subtle behind content. Built with accessibility in mind, including reduced-motion support and semantic HTML."
+    },
+    {
       "id": "codebuster",
       "title": "CodeBuster",
       "description": "An AI-powered code plagiarism detector that identifies similarities beyond simple token matching, providing a more effective alternative to traditional detection software.",
