@@ -1,0 +1,43 @@
+{
+  "experience": [
+    {
+      "id": "linamar",
+      "role": "AI/Software Engineering Co-op",
+      "company": "Linamar Robotics",
+      "location": "Guelph, Ontario",
+      "dates": "Sep 2026 – Present",
+      "technologies": ["Copilot Studio", "Power Automate", "NVIDIA Isaac Sim"],
+      "highlights": [
+        "Built a Copilot Studio agent that turns purchasing Excel files into spend summaries with benchmarked optimal pricing, replacing a 4-hour manual process; validated against past summaries and test sets.",
+        "Developed a carbide drill cost-estimation agent that drives Linamar's in-house Excel calculators through Power Automate flows and Office Scripts, automating calculations the purchasing team previously did by hand.",
+        "Simulating humanoid and collaborative robot deployments in NVIDIA Isaac Sim within models of live production environments to evaluate co-bot and humanoid integration before physical deployment."
+      ]
+    },
+    {
+      "id": "pm-accelerator",
+      "role": "AI Engineer",
+      "company": "PM Accelerator",
+      "location": "Boston, Massachusetts",
+      "dates": "Jun 2026 – Aug 2026",
+      "technologies": ["Python", "Claude API", "PostgreSQL", "Next.js", "LangGraph"],
+      "highlights": [
+        "Designed and built the multi-agent detection engine for PlanAIV, an AI pre-construction risk platform that flags scope gaps, conflicts and ambiguities in construction bid documents before contractors commit to a price.",
+        "Orchestrated parallel trade-specialist agents in LangGraph with a merge state to consolidate findings, running 2.6x faster than a single sequential pass and processing 100+ page document sets end to end in 10–15 minutes.",
+        "Built the ingestion and retrieval layer (PyMuPDF extraction with a Claude vision fallback, pgvector semantic search over Postgres) and solely developed the full-stack Next.js/FastAPI platform serving the engine."
+      ]
+    },
+    {
+      "id": "solverminds",
+      "role": "Machine Learning Intern",
+      "company": "Solverminds Solutions",
+      "location": "Chennai, Tamil Nadu",
+      "dates": "May 2024 – Dec 2024",
+      "technologies": ["Python", "scikit-learn", "TensorFlow", "pandas", "Jupyter"],
+      "highlights": [
+        "Built a Deep Q-Network (DQN) agent and custom simulation environment for container stowage planning, scaling to scenarios of 10,000 to 24,000 containers across 15 to 30 bays.",
+        "Encoded vessel lashing constraints as feasibility checks so the agent only produced valid plans.",
+        "Cut stowage-plan computation time 87% vs. the company's prior RL model over 1,000+ episodes."
+      ]
+    }
+  ]
+}

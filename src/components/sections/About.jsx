@@ -15,13 +15,14 @@ export function About() {
           <div>
             <p className="text-gray-300 mb-4 leading-relaxed">
               I&apos;m a Computer Science student at the University of Western Ontario
-              with a passion for machine learning and full-stack development. I enjoy
+              with a passion for AI engineering, machine learning and full-stack development. I enjoy
               building intelligent systems and creating software that solves real problems.
             </p>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Recently, I completed a Machine Learning internship where I built Deep Q-Network
-              agents for optimization problems. I&apos;m also working on CodeBuster, an AI-powered
-              plagiarism detector that will be presented at the Canadian Undergraduate Conference on AI.
+              I&apos;m currently an AI/Software Engineering Co-op at Linamar Robotics, building
+              Copilot Studio agents and simulating co-bot deployments in NVIDIA Isaac Sim. Before that,
+              I built PlanAIV&apos;s multi-agent detection engine as an AI Engineer at PM Accelerator,
+              and co-authored CodeBuster, an AI code plagiarism detector presented at CUCAI 2026.
             </p>
             <p className="text-gray-400 mb-6 leading-relaxed">
               When I&apos;m not coding, you can find me lifting weights at the gym,
@@ -75,10 +76,10 @@ export function About() {
                 Education
               </h3>
               <p className="text-gray-300 font-medium">BSc, Honors Specialization in Computer Science</p>
-              <p className="text-gray-400 text-sm">University of Western Ontario • Expected 2027</p>
+              <p className="text-gray-400 text-sm">University of Western Ontario • Expected Apr 2028</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded">
-                  Western Scholarship of Distinction
+                  Western Scholarship of Distinction ($3,500)
                 </span>
                 <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded">
                   Dean&apos;s Honor List 2023

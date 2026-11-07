@@ -7,17 +7,17 @@
     },
     {
       "command": "cat role.txt",
-      "output": "CS Student @ Western University | ML Enthusiast",
+      "output": "AI/Software Engineering Co-op @ Linamar Robotics",
       "delay": 80
     },
     {
       "command": "ls skills/",
-      "output": "Python  PyTorch  React  C++  TensorFlow",
+      "output": "Python  PyTorch  LangGraph  Next.js  C++",
       "delay": 80
     },
     {
       "command": "echo $FOCUS",
-      "output": "Machine Learning & Full-Stack Development",
+      "output": "AI Agents, Machine Learning & Full-Stack Development",
       "delay": 80
     }
   ]

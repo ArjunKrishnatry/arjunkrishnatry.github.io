@@ -5,6 +5,7 @@ import { Footer } from './components/layout/Footer';
 import { MobileNav } from './components/layout/MobileNav';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
+import { Experience } from './components/sections/Experience';
 import { Projects } from './components/sections/Projects';
 import { Skills } from './components/sections/Skills';
 import { Contact } from './components/sections/Contact';
@@ -12,7 +13,7 @@ import { Blog } from './components/sections/Blog';
 import { BioluminescentBackground } from './components/ui/BioluminescentBackground';
 
 // Section IDs for scroll spy
-const sectionIds = ['hero', 'about', 'projects', 'skills', 'blog', 'contact'];
+const sectionIds = ['hero', 'about', 'experience', 'projects', 'skills', 'blog', 'contact'];
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -35,6 +36,7 @@ function App() {
       <main id="main" className="flex-1 pt-16">
         <Hero />
         <About />
+        <Experience />
         <Projects />
         <Skills />
         <Blog />
