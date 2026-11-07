@@ -27,12 +27,12 @@ export function Hero() {
               <span className="text-gradient">Krishnatry</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              CS Student @ Western | ML Enthusiast
+              CS Student @ Western | AI/Software Engineer
             </p>
             <p className="text-gray-400 mb-8 max-w-lg animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              Building intelligent systems with machine learning and crafting
-              full-stack applications. Currently working on AI-powered tools
-              and exploring deep reinforcement learning.
+              Building AI agents, multi-agent systems and full-stack applications.
+              Currently an AI/Software Engineering Co-op at Linamar Robotics,
+              automating workflows with AI agents and simulating robot deployments.
             </p>
 
             {/* CTA Buttons */}

@@ -5,27 +5,59 @@
       "title": "Personal Portfolio",
       "description": "An immersive developer portfolio featuring bioluminescent visual effects, smooth animations, and a dark oceanic theme.",
       "longDescription": "Designed and built a modern, responsive portfolio website with a unique underwater-inspired aesthetic. Features include ambient bioluminescent background effects with color-shifting glow orbs and rising particles, expandable project cards, a typing terminal animation, and full dark/light mode support.",
-      "technologies": ["React", "Tailwind CSS", "Vite", "CSS Animations"],
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Vite",
+        "CSS Animations"
+      ],
       "github": "https://github.com/ArjunKrishnatry",
       "demo": "https://arjunkrishnatry.github.io/Portfolio",
       "challenges": "Created custom SVG-based particle systems and CSS animations for the bioluminescent effects while maintaining smooth 60fps performance. Implemented backdrop blur and mix-blend-modes to ensure particles remain subtle behind content. Built with accessibility in mind, including reduced-motion support and semantic HTML."
     },
     {
+      "id": "planaiv",
+      "title": "PlanAIV",
+      "description": "An AI pre-construction risk platform that flags scope gaps, conflicts and ambiguities in construction bid documents before contractors commit to a price.",
+      "longDescription": "Designed and built the multi-agent detection engine as an AI Engineer at PM Accelerator. Parallel trade-specialist agents in LangGraph feed a merge state that consolidates findings, and I solely developed the full-stack Next.js/FastAPI platform serving the engine.",
+      "technologies": [
+        "Python",
+        "Claude API",
+        "LangGraph",
+        "PostgreSQL",
+        "Next.js",
+        "FastAPI"
+      ],
+      "github": null,
+      "demo": null,
+      "challenges": "The parallel agent graph runs 2.6x faster than a single sequential pass, processing 100+ page document sets end to end in 10–15 minutes. Built the ingestion and retrieval layer with PyMuPDF extraction, a Claude vision fallback and pgvector semantic search over Postgres."
+    },
+    {
       "id": "codebuster",
       "title": "CodeBuster",
-      "description": "An AI-powered code plagiarism detector that identifies similarities beyond simple token matching, providing a more effective alternative to traditional detection software.",
-      "longDescription": "Developer on a 6-person team building CodeBuster, an advanced AI code plagiarism detector. The system uses TF-IDF features, GraphCodeBERT-based embeddings, and output-based similarity analysis to capture syntactic, semantic, and behavioral signals in code submissions.",
-      "technologies": ["Python", "PyTorch", "scikit-learn", "Streamlit"],
+      "description": "A C++ code plagiarism detector that fuses token-level, semantic and behavioral signals to catch plagiarism beyond simple token matching.",
+      "longDescription": "Built a C++ code plagiarism detector that fuses token-level (TF-IDF), semantic (GraphCodeBERT embeddings) and behavioral signals, where both programs are executed in an isolated environment on shared test inputs and their outputs compared. I owned the textual and semantic similarity modules.",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "GraphCodeBERT",
+        "scikit-learn"
+      ],
       "github": "https://github.com/ArjunKrishnatry",
       "demo": null,
-      "challenges": "Trained an MLP to fuse token, semantic, and output scores into an overall plagiarism-risk prediction. Achieved 50% higher detection rate for plagiarized code and 37% decrease in mean absolute error through hyperparameter tuning. Project to be presented at the Canadian Undergraduate Conference on AI 2025."
+      "challenges": "Helped train an MLP that fuses all three signals into a plagiarism-risk score, reaching 83.5% recall, 76.2% precision and 0.798 F1 on a held-out set of 3,159 pairs. Co-authored a paper presented at CUCAI 2026 through a poster session and oral presentation to judges."
     },
     {
       "id": "easyaccounting",
       "title": "EasyAccounting",
       "description": "A cross-platform desktop application for personal financial tracking with custom expense categorization and visual dashboards.",
       "longDescription": "Built a full-stack desktop application using React for the frontend and FastAPI for the backend, packaged via Electron for cross-platform compatibility. Features include user authentication, local encryption, custom expense categories, and summary dashboards.",
-      "technologies": ["React", "Electron", "FastAPI", "Python"],
+      "technologies": [
+        "React",
+        "Electron",
+        "FastAPI",
+        "Python"
+      ],
       "github": "https://github.com/ArjunKrishnatry",
       "demo": null,
       "challenges": "Implemented secure local encryption for sensitive financial data. Currently used monthly by family members with plans for wider release including CI security checks (dependency scanning, static analysis) for stronger cybersecurity."
@@ -35,20 +67,30 @@
       "title": "Rust to Glory",
       "description": "A Java/Swing educational game developed as a team project, featuring custom UI panels, character animations, and an inventory system.",
       "longDescription": "Collaborated with a 4-person team to deliver an educational game for CS2212. Designed custom UI panels, character animations, and an item inventory subsystem. The project received a grade of 97%.",
-      "technologies": ["Java", "Swing", "GitLab", "JUnit"],
+      "technologies": [
+        "Java",
+        "Swing",
+        "GitLab",
+        "JUnit"
+      ],
       "github": "https://github.com/ArjunKrishnatry",
       "demo": null,
       "challenges": "Wrote extensive JUnit tests and refactored the MVC structure for maintainability. Used GitLab issues and merge requests for disciplined collaboration, resulting in an efficient goal-oriented team environment."
     },
     {
       "id": "ml-internship",
-      "title": "Container Stacking Optimization",
-      "description": "Deep Q-Network agent for optimizing container stacking at ports, developed during my ML internship at Solverminds Solutions.",
-      "longDescription": "Built a Deep Q-Network (DQN) agent and custom environment for container stacking optimization. Incorporated lashing constraints to improve layout feasibility and reduce costs for shipping clients by automating stacking protocols.",
-      "technologies": ["Python", "TensorFlow", "scikit-learn", "pandas"],
+      "title": "Container Stowage Optimization",
+      "description": "Deep Q-Network agent for container stowage planning, developed during my ML internship at Solverminds Solutions.",
+      "longDescription": "Built a Deep Q-Network (DQN) agent and custom simulation environment for container stowage planning, scaling to scenarios of 10,000 to 24,000 containers across 15 to 30 bays. Vessel lashing constraints are encoded as feasibility checks so the agent only produces valid plans.",
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "scikit-learn",
+        "pandas"
+      ],
       "github": null,
       "demo": null,
-      "challenges": "Researched supervised models (XGBoost, KAN) on hydrostatic datasets, achieving 0.09% Mean Absolute Percentage Error. Designed reward shaping and scenario simulators aligned with international port operations. Also mentored incoming interns, helping them join the team ahead of schedule."
+      "challenges": "Cut stowage-plan computation time 87% compared to the company's prior RL model over 1,000+ episodes."
     }
   ]
 }

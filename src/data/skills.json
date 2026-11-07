@@ -24,7 +24,8 @@
         { "name": "Matplotlib", "icon": "matplotlib" },
         { "name": "React", "icon": "react" },
         { "name": "Next.js", "icon": "nextjs" },
-        { "name": "Flask", "icon": "flask" }
+        { "name": "Flask", "icon": "flask" },
+        { "name": "FastAPI", "icon": "fastapi" }
       ]
     },
     {
@@ -34,7 +35,12 @@
         { "name": "GitHub", "icon": "github" },
         { "name": "Linux", "icon": "linux" },
         { "name": "Jupyter", "icon": "jupyter" },
-        { "name": "LaTeX", "icon": "latex" }
+        { "name": "LaTeX", "icon": "latex" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "AWS", "icon": "amazonwebservices" },
+        { "name": "Airflow", "icon": "apacheairflow" },
+        { "name": "SSH", "icon": "ssh" },
+        { "name": "Claude Code", "icon": "claude" }
       ]
     }
   ]
